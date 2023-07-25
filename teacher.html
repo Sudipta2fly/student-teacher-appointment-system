@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher</title>
+    <link rel="stylesheet" href="teacher.css">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="top">
+            <h2>Teacher Account</h2>
+            <a href="/index.html"><button>Log Out</button></a>
+        </div>
+        <form id="appointment">
+            <h2>Schedule Appointment</h2>
+            <h2 class="appointment-alert">Booking Appointment is Successful</h2>
+
+            <input type="text" id="student-name" name="student-name" placeholder="Student's Name" required>           
+            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+            <input type="date" id="date" name="date" placeholder="Date" required>
+            <input type="time" id="time" name="time" placeholder="Time" required>
+            <input type="text" id="teacher-name" name="teacher-name" placeholder="Teacher's Name" required>
+            <button type="submit" name="submit-btn" id="submit-btn">Book Appointment</button>
+        </form>
+
+        <div class="approve-appointment">
+            <h2>Approve / Cancel Appointment</h2>
+            <button id="refresh-approve-appointment">Refresh</button>
+
+        </div>
+
+        <div class="view-appointment">
+            <h2>View All Appointment</h2>
+            <button id="refresh-view-appointment">Refresh</button>
+        </div>
+
+        <div class="view-msg">
+            <h2>View Messages</h2>
+            <button id="refresh-view-msg">Refresh</button>
+        </div>
+    </div>
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+
+    <script src="teacher.js"></script>
+</body>
+</html>
