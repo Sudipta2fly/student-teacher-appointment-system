@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    
+    <div class="container">
+
+        <div class="top">
+            <h2>Admin</h2>
+            <a href="/index.html"><button>Log Out</button></a>
+        </div>
+        <form id="add-teacher">
+            <h2>Add Teacher</h2>
+            <input type="text" id="name" name="name" placeholder="Name" required>
+            <input type="text" id="dept" name="dept" placeholder="Department" required>
+            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+            <input type="email" id="email" name="email" placeholder="Email" required>
+            <input type="password" id="password" name="password" placeholder="Password" required>
+            <button type="submit" name="add-btn" id="add-btn">Add Teacher</button>
+        </form>
+        <div class="delete-teacher">
+            <h2>Update / Delete Teacher</h2>
+            <button id="refresh-delete-teacher">Refresh</button>
+        </div>
+        <div class="approve-registration">
+            <h2>Approve Registration</h2>
+            <button id="refresh-approve-registration">Refresh</button>
+
+        </div>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+
+    <script src="admin.js"></script>
+</body>
+</html>
